@@ -1,1 +1,82 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #111; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: bold; }
+    nav a:hover { color: #00aaff; }
+
+    .container { max-width: 1000px; margin: auto; padding: 2rem; }
+
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 5rem 1rem; background: #e0f7fa; }
+    .hero h1 { font-size: 3rem; color: #00796b; }
+    .hero p { font-size: 1.2rem; margin-top: 1rem; }
+
+    section { padding: 4rem 1rem; }
+    h2 { color: #00796b; margin-bottom: 1rem; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .project { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .project:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+
+    footer { background: #111; color: white; text-align: center; padding: 2rem 1rem; margin-top: 4rem; }
+    footer a { color: #00aaff; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <div><strong>Your Name</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hello, I'm Your Name</h1>
+  <p>I'm a Software Engineer passionate about creating modern and efficient applications.</p>
+</section>
+
+<section id="about" class="container">
+  <h2>About Me</h2>
+  <p>
+    I'm a software engineering student specializing in web development and UX design.
+    I enjoy building creative, user-focused solutions using HTML, CSS, JavaScript, and modern frameworks.
+  </p>
+</section>
+
+<section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Project One</h3>
+      <p>A web app that helps users find the best places in shopping centers based on crowd and parking data.</p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>An AI-powered personal assistant for managing meetings and generating smart summaries.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="#">LinkedIn</a>.</p>
+</section>
+
+<footer>
+  <p>© 2025 Your Name | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
