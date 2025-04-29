@@ -1,187 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATRS - Dana Hafez Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f9f9f9;
-      overflow-x: hidden;
-      transition: background 0.3s ease;
-    }
-    header {
-      background: linear-gradient(135deg, #1f2937, #374151);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      animation: fadeIn 1s ease-in;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-      animation: fadeInUp 1s ease forwards;
-    }
-    h2 {
-      color: #1f2937;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-      position: relative;
-    }
-    h2::after {
-      content: '';
-      width: 50px;
-      height: 3px;
-      background: #2563eb;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      border-radius: 3px;
-    }
-    ul, .section-content {
-      padding-left: 1rem;
-    }
-    li {
-      margin-bottom: 0.8rem;
-      transition: transform 0.2s ease;
-    }
-    li:hover {
-      transform: translateX(5px);
-    }
-    .contact p, .education, .languages, .tools {
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #1f2937;
-      color: white;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-      animation: fadeIn 1.5s ease-in;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #1d4ed8;
-    }
-    section:hover {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATRS - Applied Technology & Research Society</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>ATRS - Applied Technology & Research Society</h1>
-    <p>Dana Hafez - Software Engineer</p>
+  <div class="loader" id="loader"></div>
+  <header id="navbar">
+    <h1 class="typing-effect">ATRS - Applied Technology & Research Society</h1>
   </header>
+  
+  <main>
+    <section class="intro reveal">
+      <p><strong>Dana Hafez</strong> - Software Engineer</p>
+      <p>Email: dana7afez@gmail.com</p>
+      <p>Phone: +966577320401</p>
+      <p>Location: Riyadh, KSA</p>
+      <div class="links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:dana7afez@gmail.com">dana7afez@gmail.com</a></p>
-    <p>Phone: +966 577 320 401</p>
-    <p>Location: Riyadh, KSA</p>
-    <p><a href="https://linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com/dana7afez" target="_blank">GitHub</a></p>
-  </section>
+    <section class="reveal">
+      <h2>Education</h2>
+      <p>King Saud University - BSc in Software Engineering</p>
+    </section>
 
-  <section class="education">
-    <h2>Education</h2>
-    <div class="section-content">
-      <p><strong>King Saud University</strong> - B.Sc. in Software Engineering</p>
-    </div>
-  </section>
+    <section class="reveal">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li>Languages: Java, JavaScript, TypeScript, HTML, CSS, Python, SQL, Dart</li>
+        <li>Frameworks: Flutter, React.js, Next.js</li>
+        <li>Databases: MariaDB, MongoDB, Firebase</li>
+        <li>Tools: FlutterFlow, Trello, GitHub, Figma, Canva</li>
+        <li>UI/UX Design, Web & App Development, Software Design</li>
+      </ul>
+    </section>
 
-  <section class="skills">
-    <h2>Skills & Tools</h2>
-    <div class="section-content">
-      <p><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML, CSS, Python, SQL, Dart</p>
-      <p><strong>Frameworks:</strong> Flutter, React.js, Next.js</p>
-      <p><strong>Tools:</strong> Figma, Canva, Trello, GitHub, Firebase, MongoDB, FlutterFlow, Visual Studio Code, Microsoft Office</p>
-      <p><strong>Other:</strong> Web & App Development, UI/UX Design, Software Architecture, Graphic Design</p>
-    </div>
-  </section>
+    <section class="projects reveal">
+      <h2>Projects</h2>
+      <div class="card">AidPulse AI - Top 5 @ King Salman Relief Hackathon</div>
+      <div class="card">AskCCIS - AI Chatbot (In Progress)</div>
+      <div class="card">Elevate App - Job Seekers Platform</div>
+      <div class="card">Face Authentication Login System</div>
+      <div class="card">Yumna - AI Meeting Assistant</div>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>AidPulse AI</strong> – Designed AI-powered humanitarian relief platform (Top 5, King Salman Relief Hackathon)</li>
-      <li><strong>AskCCIS (In Progress)</strong> – AI chatbot to assist CCIS students</li>
-      <li><strong>Elevate App</strong> – Mobile app for job seekers and employers</li>
-      <li><strong>Face Authentication Login System</strong> – Biometric login with real-time face detection</li>
-      <li><strong>Yumna</strong> – AI-powered meeting assistant (Software Architecture Project)</li>
-    </ul>
-  </section>
+    <section class="reveal">
+      <h2>Certificates</h2>
+      <ul>
+        <li>NVIDIA - Fundamentals of Deep Learning</li>
+        <li>Google - UX Design</li>
+        <li>AWS - Cloud Services Essentials</li>
+        <li>TawasolThon - Tech Innovation</li>
+        <li>Elevate - Certificate of Appreciation</li>
+      </ul>
+    </section>
 
-  <section class="certificates">
-    <h2>Certificates</h2>
-    <ul>
-      <li>Fundamentals of Deep Learning - NVIDIA</li>
-      <li>Foundations of UX Design - Google</li>
-      <li>AWS Cloud Services Essentials</li>
-      <li>Tech Innovation - TawasolThon Hackathon</li>
-      <li>Certificate of Appreciation - Project "Elevate"</li>
-    </ul>
-  </section>
+    <section class="reveal">
+      <h2>Experience</h2>
+      <p><strong>Intern at Drahim</strong> - Fintech project contributions & insights</p>
+    </section>
 
-  <section class="experience">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>Intern at Drahim</strong> – Worked on fintech projects, gained insight into tech-finance integration</li>
-    </ul>
-  </section>
+    <section class="reveal">
+      <h2>Volunteering</h2>
+      <ul>
+        <li>AI Club – AI Labs Committee</li>
+        <li>Future Tech Club – Design Team (Media)</li>
+        <li>ATRS – Development Committee</li>
+        <li>Future U – Design Committee</li>
+      </ul>
+    </section>
 
-  <section class="volunteering">
-    <h2>Volunteering</h2>
-    <ul>
-      <li>AI Club – AI Labs Committee Member</li>
-      <li>Future Technology Club – Media Committee (Design Team)</li>
-      <li>ATRS – Development Committee Member</li>
-      <li>Future U Initiative – Design Committee Member</li>
-    </ul>
-  </section>
+    <section class="reveal">
+      <h2>Languages</h2>
+      <p>Arabic, English</p>
+    </section>
 
-  <section class="languages">
-    <h2>Languages</h2>
-    <p>Arabic (Native), English (Fluent)</p>
-  </section>
+    <section class="contact reveal">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-  <footer>
-    &copy; 2025 Dana Hafez. All rights reserved.
-  </footer>
+    <button id="mode-toggle">🌙</button>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
