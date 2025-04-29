@@ -3,79 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
+  <title>ATRS - Applied Technology & Research Society</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
-    header { background: #111; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
-    nav { display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: bold; }
-    nav a:hover { color: #00aaff; }
+    header, footer { background: #003366; color: white; padding: 1.5rem 2rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #00ccff; }
 
-    .container { max-width: 1000px; margin: auto; padding: 2rem; }
+    .container { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
+    section { margin-bottom: 3rem; }
+    h1, h2, h3 { color: #003366; }
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #003366; display: inline-block; }
+    ul { padding-left: 1.2rem; }
 
-    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 5rem 1rem; background: #e0f7fa; }
-    .hero h1 { font-size: 3rem; color: #00796b; }
-    .hero p { font-size: 1.2rem; margin-top: 1rem; }
+    .contact-info, .skills, .experience, .education, .projects, .certificates, .volunteering, .languages {
+      margin-bottom: 2rem;
+    }
 
-    section { padding: 4rem 1rem; }
-    h2 { color: #00796b; margin-bottom: 1rem; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .box { background: #fff; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .project { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    .project:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-
-    footer { background: #111; color: white; text-align: center; padding: 2rem 1rem; margin-top: 4rem; }
-    footer a { color: #00aaff; text-decoration: none; }
+    footer { font-size: 0.9rem; }
+    a { color: #0077b5; text-decoration: none; }
   </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <div><strong>Your Name</strong></div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <h1>ATRS - Applied Technology & Research Society</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Hello, I'm Your Name</h1>
-  <p>I'm a Software Engineer passionate about creating modern and efficient applications.</p>
-</section>
+<div class="container">
 
-<section id="about" class="container">
-  <h2>About Me</h2>
-  <p>
-    I'm a software engineering student specializing in web development and UX design.
-    I enjoy building creative, user-focused solutions using HTML, CSS, JavaScript, and modern frameworks.
-  </p>
-</section>
+  <section id="about">
+    <h2>Dana Hafez</h2>
+    <p><strong>Software Engineer</strong></p>
+    <p>Email: <a href="mailto:dana7afez@gmail.com">dana7afez@gmail.com</a></p>
+    <p>Phone: +966577320401</p>
+    <p>Location: Riyadh, KSA</p>
+    <p>
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a>
+    </p>
+  </section>
 
-<section id="projects" class="container">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A web app that helps users find the best places in shopping centers based on crowd and parking data.</p>
-    </div>
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>An AI-powered personal assistant for managing meetings and generating smart summaries.</p>
-    </div>
-  </div>
-</section>
+  <section class="education">
+    <h2>Education</h2>
+    <p><strong>King Saud University</strong> – B.Sc. in Software Engineering</p>
+  </section>
 
-<section id="contact" class="container">
-  <h2>Contact</h2>
-  <p>Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="#">LinkedIn</a>.</p>
-</section>
+  <section class="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML, CSS, Python, SQL, Dart</li>
+      <li><strong>Frameworks:</strong> Flutter, React.js, Next.js</li>
+      <li><strong>Tools:</strong> MongoDB, MariaDB, Firebase, FlutterFlow</li>
+      <li><strong>Design:</strong> Figma, Canva, UI/UX Design</li>
+      <li><strong>Productivity:</strong> Trello, GitHub, Visual Studio Code, Microsoft Office</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>AidPulse AI</strong> – Designed an AI-powered humanitarian relief platform (Top 5 at King Salman Relief Hackathon)</li>
+      <li><strong>AskCCIS (In Progress)</strong> – AI-powered chatbot for CCIS students</li>
+      <li><strong>Elevate App</strong> – Mobile app to assist job seekers and employers</li>
+      <li><strong>Face Authentication Login System</strong> – Real-time biometric authentication system</li>
+      <li><strong>Yumna</strong> – AI meeting assistant built for enterprise productivity</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Professional Experience</h2>
+    <p><strong>Intern at Drahim</strong> – Worked on fintech solutions, connecting finance and tech.</p>
+  </section>
+
+  <section class="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Fundamentals of Deep Learning – NVIDIA</li>
+      <li>Foundations of UX Design – Google</li>
+      <li>AWS Cloud Services Essentials</li>
+      <li>Tech Innovation – TawasolThon Hackathon</li>
+      <li>Certificate of Appreciation – Project “Elevate”</li>
+    </ul>
+  </section>
+
+  <section class="volunteering">
+    <h2>Volunteering</h2>
+    <ul>
+      <li>AI Club – AI Labs Committee Member</li>
+      <li>Future Technology Club – Design Team (Media Committee)</li>
+      <li>KSU ATRS – Development Committee Member</li>
+      <li>Future U Initiative – Design Committee Member</li>
+    </ul>
+  </section>
+
+  <section class="languages">
+    <h2>Languages</h2>
+    <p>Arabic, English</p>
+  </section>
+
+</div>
 
 <footer>
-  <p>© 2025 Your Name | Built with HTML & CSS</p>
+  <p>© 2025 Dana Hafez | ATRS - Applied Technology & Research Society</p>
 </footer>
 
 </body>
