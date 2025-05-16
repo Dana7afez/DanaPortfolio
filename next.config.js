@@ -3,8 +3,8 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   output: "export",
-  basePath: isProd ? "/atrs-website" : "", // Use basePath only in production
-  assetPrefix: isProd ? "/atrs-website/" : "", // Use assetPrefix only in production
+  basePath: isProd ? "/DanaPortfolio" : "", // Use basePath only in production
+  assetPrefix: isProd ? "/DanaPortfolio/" : "", // Use assetPrefix only in production
   eslint: {
     ignoreDuringBuilds: true,
   },
